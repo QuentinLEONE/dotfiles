@@ -14,8 +14,8 @@ local theme = {}
 
 theme.font          = "monospace 8"
 
-theme.bg_normal     = "#22222200"
-theme.bg_focus      = "#535d6cff"
+theme.bg_normal     = "#1d1f2100"
+theme.bg_focus      = "#1d1f2177"
 theme.bg_urgent     = "#ff000000"
 theme.bg_minimize   = "#44444400"
 theme.bg_systray    = theme.bg_normal
