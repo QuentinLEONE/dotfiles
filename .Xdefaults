@@ -7,7 +7,7 @@ Xft.hintstyle: hintnone
 
 ! ----- URxvt configuration -----
 ! URxvt.geometry: 74x27
-URxvt.transparent: true
+URxvt.transparent: false
 ! police configuration
 URxvt.antialiasing: true
 URxvt.hinting: true

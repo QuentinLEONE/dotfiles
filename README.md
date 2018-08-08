@@ -1,1 +1,7 @@
-My dotfiles for urxvt, fish and neovim.
+My dotfiles for:
+  - awesome wm
+  - urxvt
+  - termite
+  - fish
+  - vim
+  - neovim
