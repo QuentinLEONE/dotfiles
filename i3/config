@@ -172,8 +172,9 @@ bar {
 # No titlebar
 new_window 1pixel
 
-# lock screen
+# lock screen and shutdown
 bindsym $mod+F12 exec i3lock --color=1d1f21
+bindsym $mod+Control+F12 exec shutdown
 
 # shortcuts
 bindsym $mod+Control+f exec firefox
