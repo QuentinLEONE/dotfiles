@@ -188,8 +188,7 @@ bindsym $mod+F12 exec i3lock --color=1d1f21
 bindsym $mod+Control+F12 exec shutdown -h 0
 
 # sound control
-bindsym $mod+F5 exec amixer sset Master mute
-bindsym $mod+F6 exec amixer sset Master unmute
+bindsym $mod+F6 exec amixer sset Master toggle
 bindsym $mod+F7 exec amixer sset Master 5%-
 bindsym $mod+F8 exec amixer sset Master 5%+
 
