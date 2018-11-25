@@ -333,7 +333,7 @@ globalkeys = gears.table.join(
     awful.key({ modkey }, "p", function() menubar.show() end,
               {description = "show the menubar", group = "launcher"}),
     -- Lock screen
-    awful.key({ modkey }, "F12", function() awful.util.spawn("slock") end,
+    awful.key({ modkey }, "F12", function() awful.util.spawn("dm-tool lock") end,
               {description = "lock screen", group = "launcher"}),
     -- Open firefox
     awful.key({ modkey }, "f", function() awful.util.spawn("firefox") end,

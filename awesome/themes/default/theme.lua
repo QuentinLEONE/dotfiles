@@ -22,7 +22,7 @@ theme.bg_systray    = theme.bg_normal
 
 theme.fg_normal     = "#ffffff55"
 theme.fg_focus      = "#ffffff55"
-theme.fg_urgent     = "#ffffff55"
+theme.fg_urgent     = "#ff000055"
 theme.fg_minimize   = "#ffffff55"
 
 theme.useless_gap   = dpi(2)
@@ -98,7 +98,7 @@ theme.menu_width  = dpi(100)
 -- theme.titlebar_maximized_button_normal_active = themes_path.."default/titlebar/maximized_normal_active.png"
 -- theme.titlebar_maximized_button_focus_active  = themes_path.."default/titlebar/maximized_focus_active.png"
 
-theme.wallpaper = themes_path.."default/background_2.png"
+theme.wallpaper = themes_path.."default/aniket-deole-294646-unsplash.jpg"
 
 -- You can use your own layout icons like this:
 -- theme.layout_fairh = themes_path.."default/layouts/fairhw.png"

@@ -10,6 +10,10 @@
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
 set $mod Mod4
+set $left h
+set $down j
+set $up k
+set $right l
 
 # Font for window titles. Will also be used by the bar unless a different font
 # is used in the bar {} block below.
@@ -43,10 +47,10 @@ bindsym $mod+d exec dmenu_run
 # bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
 # change focus
-bindsym $mod+h focus left
-bindsym $mod+j focus down
-bindsym $mod+k focus up
-bindsym $mod+l focus right
+bindsym $mod+$left focus left
+bindsym $mod+$down focus down
+bindsym $mod+$up focus up
+bindsym $mod+$right focus right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
@@ -55,10 +59,10 @@ bindsym $mod+Up focus up
 bindsym $mod+Right focus right
 
 # move focused window
-bindsym $mod+Shift+h move left
-bindsym $mod+Shift+j move down
-bindsym $mod+Shift+k move up
-bindsym $mod+Shift+l move right
+bindsym $mod+Shift+$left move left
+bindsym $mod+Shift+$down move down
+bindsym $mod+Shift+$up move up
+bindsym $mod+Shift+$right move right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Shift+Left move left
@@ -128,6 +132,10 @@ bindsym $mod+Shift+7 move container to workspace $ws7
 bindsym $mod+Shift+8 move container to workspace $ws8
 bindsym $mod+Shift+9 move container to workspace $ws9
 bindsym $mod+Shift+0 move container to workspace $ws10
+bindsym $mod+Control+$left move container to output left
+bindsym $mod+Control+$right move container to output right
+bindsym $mod+Control+Mod1+$left move workspace to output left
+bindsym $mod+Control+Mod1+$right move workspace to output right
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -144,10 +152,10 @@ mode "resize" {
         # Pressing right will grow the window’s width.
         # Pressing up will shrink the window’s height.
         # Pressing down will grow the window’s height.
-        bindsym h resize shrink width 10 px or 10 ppt
-        bindsym j resize grow height 10 px or 10 ppt
-        bindsym k resize shrink height 10 px or 10 ppt
-        bindsym l resize grow width 10 px or 10 ppt
+        bindsym $left resize shrink width 10 px or 10 ppt
+        bindsym $down resize grow height 10 px or 10 ppt
+        bindsym $up resize shrink height 10 px or 10 ppt
+        bindsym $right resize grow width 10 px or 10 ppt
 
         # same bindings, but for the arrow keys
         bindsym Left resize shrink width 10 px or 10 ppt
@@ -166,7 +174,10 @@ bindsym $mod+r mode "resize"
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-        status_command i3status
+	colors {
+		background #222c36
+	}
+        status_command i3status -c ~/.config/i3/i3status.conf
 }
 
 # No titlebar
@@ -174,8 +185,14 @@ new_window 1pixel
 
 # lock screen and shutdown
 bindsym $mod+F12 exec i3lock --color=1d1f21
-bindsym $mod+Control+F12 exec shutdown
+bindsym $mod+Control+F12 exec shutdown -h 0
+
+# sound control
+bindsym $mod+F5 exec amixer sset Master mute
+bindsym $mod+F6 exec amixer sset Master unmute
+bindsym $mod+F7 exec amixer sset Master 5%-
+bindsym $mod+F8 exec amixer sset Master 5%+
 
 # shortcuts
-bindsym $mod+Control+f exec firefox
-bindsym $mod+Control+s exec sublime-text
+bindsym $mod+Mod1+f exec firefox
+bindsym $mod+Mod1+s exec sublime-text
