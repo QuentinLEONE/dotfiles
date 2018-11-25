@@ -15,3 +15,4 @@ Ce dépôt répertorie mes dotfiles.
 Pour que les dotfiles fonctionnent sans problèmes, il faut
 
   - `xcompmgr` (transparence du terminal)
+  - `z` pour fish
