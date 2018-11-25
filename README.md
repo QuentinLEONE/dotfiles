@@ -16,3 +16,5 @@ Pour que les dotfiles fonctionnent sans problèmes, il faut
 
   - `xcompmgr` (transparence du terminal)
   - `z` pour fish
+  - helvetica pour le thème GTK (zip dans le répertoire)
+  - thème GTK (https://github.com/horst3180/arc-theme)
