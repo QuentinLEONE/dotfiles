@@ -7,8 +7,8 @@ Ce dépôt répertorie mes dotfiles.
   - st : *Simple Terminal*
   - fish : shell
   - gtk-3.0 : thème GTK
-  - zathura : lecteur PDF
-  - ranger : gestionnaire de fichier
+  - zathura : lecteur PDF (configuration par défaut)
+  - ranger : gestionnaire de fichier (configuration par défaut)
   - (awesome : configuration différente pour chaque distribution de Linux)
 
 # Dépendances
