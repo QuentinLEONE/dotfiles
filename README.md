@@ -10,3 +10,8 @@ Ce dépôt répertorie mes dotfiles.
   - zathura : lecteur PDF
   - ranger : gestionnaire de fichier
   - (awesome : configuration différente pour chaque distribution de Linux)
+
+# Dépendances
+Pour que les dotfiles fonctionnent sans problèmes, il faut
+
+  - `xcompmgr` (transparence du terminal)
